@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Extension</title>
+    <style>
+        #calculator {
+            width: 320px; /* Adjusted width for better proportions */
+            margin: 0 auto;
+            padding: 10px;
+            border: 2px solid #ccc; /* Increased border thickness for a cleaner look */
+            border-radius: 10px; /* Rounded corners for a more appealing shape */
+            background-color: #777; /* Grey background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        #display {
+            width: 100%;
+            height: 40px;
+            font-size: 24px;
+            margin: 10px 0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        .button {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            background-color: #6ed471;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button.red {
+            background-color: #f55f3e; /* Red color */
+        }
+        .button.blue {
+            background-color: #617eb1; /* Blue color */
+        }
+        .button:hover {
+            background-color: #6db178;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button class="button" >1</button>
+            <button class="button" >2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+            <button class="button" >4</button>
+            <button class="button" >5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+            <button class="button" >7</button>
+            <button class="button" >8</button>
+            <button class="button">9</button>
+            <button class="button" >*</button>
+            <button class="button red">C</button> 
+            <button class="button">0</button>
+            <button class="button blue">=</button> 
+            <button class="button">/</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name":"calculator",
+    "version":"69",
+    "description": "A simple calculator extension by Gokul Prasad",
+
+    "browser_action": {
+        "default_popup": "calculator.html"
+        
+    },
+    "icons":{
+        "16":"icon16.png",
+        "48":"icon48.png",
+        "128":"icon128.png"
+
+    },
+
+    "permissions":[
+        "activeTab"
+    ]
+    
+}
